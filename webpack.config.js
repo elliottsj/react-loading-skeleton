@@ -8,7 +8,8 @@ module.exports = {
   output: {
     library: "Skeleton",
     libraryTarget: "umd",
-    filename: "bundle.js"
+    filename: "bundle.js",
+    globalObject: "this"
   },
 
   externals: {
