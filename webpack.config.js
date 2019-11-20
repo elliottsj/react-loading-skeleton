@@ -1,4 +1,4 @@
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -8,7 +8,8 @@ module.exports = {
   output: {
     library: "Skeleton",
     libraryTarget: "umd",
-    filename: "bundle.js"
+    filename: "bundle.js",
+    globalObject: "this"
   },
 
   externals: {
@@ -33,9 +34,9 @@ module.exports = {
   plugins: [
     new CopyPlugin([
       {
-        from: 'src/index.d.ts',
-        to: 'index.d.ts',
-      },
-    ]),
-  ],
+        from: "src/index.d.ts",
+        to: "index.d.ts"
+      }
+    ])
+  ]
 };
