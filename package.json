@@ -1,6 +1,9 @@
 {
-  "name": "react-loading-skeleton",
-  "version": "1.3.0",
+  "name": "@elliottsj/react-loading-skeleton",
+  "version": "1.4.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "author": "David Tang",
   "private": false,
